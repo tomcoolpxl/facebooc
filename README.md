@@ -18,10 +18,12 @@ Install following  package:
 sudo apt-get update
 sudo apt-get install -yq build-essential make libsqlite3-dev sqlite3
 ```
+**Note**: When you launch a container using **ubuntu** image from the repository, it may not have sudoers installed. Also, you would be a root user inside the container. In such case, remove sudo and execute rest of the command. 
+
 
 # Build
 
-Using git, clone the repository with the URL above. Repository contains the source files written in C, along with a Makefile with targets such as "all", "run". Destination path should be /opt/facebooc.
+Using git, clone the repository with the URL above. Repository contains the source files written in C, along with a Makefile with targets such as "all", "run". Destination path should be **/opt/facebooc**.
 Run the following command to compile the source code.make all
 
 ```bash
@@ -31,7 +33,7 @@ make all
 
 # Run 
 
-Launch app as bin/facebooc This will attach to port 16000
+Launch app as bin/facebooc This will attach to port **16000**
 
 
 ```bash
